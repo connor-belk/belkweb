@@ -3,7 +3,7 @@ import "./globals.css";
 import Footer from "./_components/Footer";
 import Navbar from "./_components/Navbar";
 
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono } from "next/font/google";
 
 const geistMono = Geist_Mono({
   subsets: ["latin"],
