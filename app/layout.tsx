@@ -24,8 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="flex flex-col h-[100%] overflow-x-hidden">
-      <body className={`flex flex-col h-[100%] ${geistMono.className}`}>
-        <Navbar />
+      <body
+        className={`flex flex-col h-screen ${geistMono.className} text-gray-200`}
+      >
+        {/* <Navbar /> */}
         {children}
         <Footer />
       </body>

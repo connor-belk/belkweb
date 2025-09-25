@@ -14,8 +14,8 @@ const Navbar = () => {
   return (
     <nav className={`bg-gradient-to-b from-slate-500 to-slate-950/5`}>
       <Link href="/" className="text-lg md:text-3xl">
-        <h1 className="text-center px-3 pt-3 pb-4">
-          &lt;h1&gt; Belk Web Development &lt;/h1&gt;
+        <h1 className="text-center text-2xl px-3 pt-3 pb-4 font-bold">
+          Connor Belk
         </h1>
       </Link>
 
