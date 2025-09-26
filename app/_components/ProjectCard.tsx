@@ -2,7 +2,13 @@
 
 // import Link from "next/link";
 
-const ProjectCard = ({ project, description, image }: any) => {
+type ProjectCardProps = {
+  project: string;
+  description: string;
+  image: string;
+};
+
+const ProjectCard = ({ project, description, image }: ProjectCardProps) => {
   return (
     <div>
       <h2>
