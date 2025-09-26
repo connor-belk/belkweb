@@ -1,6 +1,6 @@
 // TODO: Create Prop types for project, description, and image
 
-import Link from "next/link";
+// import Link from "next/link";
 
 const ProjectCard = ({ project, description, image }: any) => {
   return (
