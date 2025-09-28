@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Belk Web Development",
   description:
-    "Quick, Easy, and local Web Development and administration services for you.",
+    "Professional full-stack web development by Belk Web Development. Custom, responsive websites and apps built to grow your brand online.",
 };
 
 export default function RootLayout({
