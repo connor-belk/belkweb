@@ -78,16 +78,16 @@ export default function Home() {
         </h2>
         <div className="flex flex-col gap-4">
           <ProjectCard
+            project="URL Shortener"
+            description="Personal URL shortener website with account panel."
+            image="/photos/url-shrtnr1.png"
+            href="https://shrtnr.belkweb.dev/"
+          />
+          <ProjectCard
             project="belkweb.dev"
             description="Personal Portfolio Website"
             image="/photos/belkweb.png"
             href="https://belkweb.dev"
-          />
-          <ProjectCard
-            project="URL Shortener"
-            description="Personal URL shortener website with account panel."
-            image="/photos/url-shrtnr1.png"
-            href="https://url-shrtnr.vercel.app/"
           />
         </div>
       </div>
