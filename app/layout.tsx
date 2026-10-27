@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "./_components/Footer";
-// import Navbar from "./_components/Navbar";
+import Navbar from "./_components/Navbar";
 
 import { Geist_Mono } from "next/font/google";
 
@@ -25,9 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="flex flex-col h-[100%] overflow-x-hidden">
       <body
-        className={`flex flex-col h-screen ${geistMono.className} text-gray-200`}
+        className={`flex flex-col items-center h-screen ${geistMono.className} text-gray-200`}
       >
-        {/* <Navbar /> */}
+        <Navbar />
         {children}
         <Footer />
       </body>

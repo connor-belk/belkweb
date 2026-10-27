@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-slate-500">
+    <footer className="pt-3 bg-gradient-to-b to-slate-500 from-slate-950/5 w-full">
       <p className="text-center">&copy; 2026 Belk Web Development</p>
     </footer>
   );

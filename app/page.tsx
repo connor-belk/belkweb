@@ -1,10 +1,14 @@
 // import Image from "next/image";
 import Link from "next/link";
 import ProjectCard from "./_components/ProjectCard";
+import ContactForm from "./_components/ContactForm";
 
 export default function Home() {
   return (
-    <div id="top" className="p-2 flex flex-col justify-start gap-2 mt-6 mb-3">
+    <div
+      id="top"
+      className="p-2 flex flex-col justify-start gap-2 max-w-[1100px] mt-6 mb-3"
+    >
       {/* Hero Section */}
       <div className="mb-6">
         <p className="font-bold text-3xl">Hi, I&apos;m Connor Belk.</p>
@@ -22,13 +26,13 @@ export default function Home() {
         <article className="mb-3">
           I&apos;m a self-taught full-stack web developer from the United
           States. I have over 5 years of experience in web development spanning
-          from HTML, CSS, and JavaScript to React, Next.js exovling into
+          from HTML, CSS, and JavaScript to React, Next.js evolving into
           Typescript, using Nodejs. I am passioate about creating user-friendly
           websites that are easy to use and navigate. I love to learn new
           technologies and techniques to improve my skills.
         </article>
         <article className="mb-3">
-          In my free time, I enjoy playing video games, playing D&D with friends
+          In my free time I enjoy playing video games, playing D&D with friends,
           watching movies with my wife, and listening to music.
         </article>
       </div>
@@ -39,7 +43,7 @@ export default function Home() {
           Experience
         </h2>
         <section className="mb-5">
-          <article>Senior Developer at belkweb.dev</article>
+          <article>Owner of belkweb.dev</article>
           <p>2020 - Present</p>
         </section>
       </div>
@@ -50,7 +54,7 @@ export default function Home() {
           Skills
         </h2>
         <article className="mb-3">
-          <ul className="list-disc ml-4">
+          <ul className="list-disc ml-4 grid grid-cols-2 lg:grid-cols-6">
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
@@ -72,17 +76,24 @@ export default function Home() {
         <h2 id="projects" className="font-bold mb-4">
           Projects
         </h2>
-        <div>
+        <div className="flex flex-col gap-4">
           <ProjectCard
             project="belkweb.dev"
             description="Personal Portfolio Website"
-            image="#"
+            image="/photos/belkweb.png"
+            href="https://belkweb.dev"
+          />
+          <ProjectCard
+            project="URL Shortener"
+            description="Personal URL shortener website with account panel."
+            image="/photos/url-shrtnr1.png"
+            href="https://url-shrtnr.vercel.app/"
           />
         </div>
       </div>
 
       {/* Contact Section */}
-      <div className="mb-6"></div>
+      <ContactForm />
 
       <Link href={"#top"} className="animate-all duration-300 ease-in-out">
         <button>back to top</button>

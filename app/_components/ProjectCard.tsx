@@ -1,24 +1,35 @@
 // TODO: Create Prop types for project, description, and image
 
-// import Link from "next/link";
+import Link from "next/link";
+import Image from "next/image";
 
 type ProjectCardProps = {
   project: string;
   description: string;
   image: string;
+  href: string;
 };
 
-const ProjectCard = ({ project, description, image }: ProjectCardProps) => {
+const ProjectCard = ({
+  project,
+  description,
+  image,
+  href,
+}: ProjectCardProps) => {
   return (
-    <div>
-      <h2>
-        <a href="https://www.belkweb.dev" target="blank">
-          {project}
-        </a>
-      </h2>
-      <p>{description}</p>
-      <img src={image} alt={project} />
-    </div>
+    <Link href={href} target="_blank">
+      <div>
+        <h2 className="font-bold text-2xl">{project}</h2>
+        <p>{description}</p>
+        <Image
+          src={image}
+          alt={project}
+          width={800}
+          height={450}
+          className="w-full rounded-xl object-cover border-4 border-slate-500/50"
+        />
+      </div>
+    </Link>
   );
 };
 
